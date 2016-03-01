@@ -29,11 +29,11 @@ const Accounting = 1024;        //10000000000
 
 I have NormalAdmin, Reading and Writing permissions, so:
 ```php
-   $myPerms = StringWise::mOrInt([
-       StringWise::NormalAdmin,
-       StringWise::Reading,
-       StringWise::Writing
-   ]); // gives 27
+$myPerms = StringWise::mOrInt([
+    StringWise::NormalAdmin,
+    StringWise::Reading,
+    StringWise::Writing
+]); // gives 27
 ```
 probably you think that;
 
@@ -51,11 +51,11 @@ are both true.
 
 ### If I have User, NormalAdmin, SysAdmin and Writing permissions, so:
 ```php
-   $myPerms = StringWise::mOrInt([
-       StringWise::User,
-       StringWise::NormalAdmin,
-       StringWise::SysAdmin,
-       StringWise::Writing
-   ]); //gives 23
+$myPerms = StringWise::mOrInt([
+    StringWise::User,
+    StringWise::NormalAdmin,
+    StringWise::SysAdmin,
+    StringWise::Writing
+]); //gives 23
 ```
 If you have SysAdmin, you have NormalAdmin and User privileges, as we want it to be. If you have SysAdmin, in the addition process it will automatically eliminate the NormalAdmin and User privileges, if you use methods, you do not need to be worry about it.
