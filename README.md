@@ -29,7 +29,7 @@ const Accounting = 1024;        //10000000000
 
 I have NormalAdmin, Reading and Writing permissions, so:
 ```php
-$myPerms = StringWise::mOrInt([
+$myPerms = StringWise::orInt([
     StringWise::NormalAdmin,
     StringWise::Reading,
     StringWise::Writing
@@ -51,7 +51,7 @@ are both true.
 
 ### If I have User, NormalAdmin, SysAdmin and Writing permissions, so:
 ```php
-$myPerms = StringWise::mOrInt([
+$myPerms = StringWise::orInt([
     StringWise::User,
     StringWise::NormalAdmin,
     StringWise::SysAdmin,
